@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project thương mại điện tử nhóm 14</title>
+    <link rel="icon" href="./assets/img/logo/shopee-logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="grid wide">
+            <!-- navbar -->
+            <nav class="header__navbar ">
+                <ul class="header__nav-list">
+                    <li class="header__nav-item header__nav-item--hover header__nav-item--separate">Kênh Người Bán</li>
+                    <li class="header__nav-item header__nav-item--hover header__nav-item--separate">Trở thành Người bán Shopee</li>
+                    <li class="header__nav-item header__nav-item--hover header__nav-item--separate header__show-qr">
+                        Tải ứng dụng
+                    </li>
+         
+                
+                    <li class="header__nav-item">
+                        Kết nối
+                        <a href="https://www.facebook.com/ShopeeVN" class="header__nav-icon-link">
+                            <i class="header__nav-icon fab fa-facebook"></i>
+                        </a>
+                        <a href="https://www.instagram.com/shopee_vn/" class="header__nav-icon-link">
+                            <i class="header__nav-icon fab fa-instagram"></i>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="header__nav-list">
+                    <li class="header__nav-item header__show-note">
+                        <a href="#" class="header__nav-item-link">
+                            <i class="header__nav-icon far fa-bell"></i>
+                            Thông báo
+                        </a>
+                       
+                        
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="#" class="header__nav-item-link">
+                            <i class="header__nav-icon far fa-question-circle"></i>
+                            Hỗ trợ
+                        </a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="#" class="header__nav-item-link">
+                            <i class="header__nav-icon far fas fa-globe "  ></i>
+                            Tiếng việt
+                            <i class="header__nav-icon far fas fa-chevron-down"></i>
+                        </a>
+                    </li>
+                    <li class="header__nav-item header__nav-item--bold header__nav-item--separate">
+                        <a href="#" class="header__nav-item-link">Đăng ký</a>
+                    </li>
+                    <li class="header__nav-item header__nav-item--bold">
+                        <a href="#" class="header__nav-item-link">Đăng nhập</a>
+                    </li>
+    
+                 
+                </ul>
+            </nav>
+            <!-- search -->
+            <div class="header__contain">
+                <label for="mobile-search" class="header__mobile-search">
+                    <i class="header__mobile-search-icon fas fa-search"></i>
+                </label>
+                <div class="header__logo">
+                    <a href="#" class="header__logo-link">
+                        <img src="./assets/img/logo/logo-full-white.png" class="header__logo-img">
+                    </a>
+                </div>
+                <input type="checkbox" id="mobile-search" class="header__search-check" hidden>
+                <div class="header__search">
+                    <div class="header__search-input-wrap">
+                        <input type="text" class="header__search-input" placeholder="Tìm kiếm trên Shoppee">
+                        <div class="header__search-history">
+                            <ul class="header__search-history-list">
+                                <li class="header__search-history-item">
+                                    <a href="#">Nhân  </a>
+                                </li>
+                                <li class="header__search-history-item">
+                                    <a href="#">Dũng</a>
+                                </li>
+                                <li class="header__search-history-item">
+                                    <a href="#">Phương</a>
+                                </li>
+                                <li class="header__search-history-item">
+                                    <a href="#">Nhân</a>
+                                </li>
+                                <li class="header__search-history-item">
+                                    <a href="#">Quang</a>
+                                </li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                    <button class="btn header__search-btn">
+                        <i class="header__search-btn-icon fas fa-search"></i>
+                    </button>
+                </div>
+            
+                <div class="header__cart header__cart--has-cart">
+                    <i class="header__cart-icon fas fa-shopping-cart"></i>
+                    <div class="header__cart-count">0</div>
+                    
+                    <div class="header__cart-list no-cart">
+                        <img src="" class="header__no-cart-img">
+                       
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <ul class="header__sort-bar">
+            <li class="header__sort-item">
+                <a href="#" class="header__sort-link">Liên quan</a>
+            </li>
+            <li class="header__sort-item header__sort-item--active">
+                <a href="#" class="header__sort-link">Mới nhất</a>
+            </li>
+            <li class="header__sort-item">
+                <a href="#" class="header__sort-link">Bán chạy</a>
+            </li>
+            <li class="header__sort-item">
+                <a href="#" class="header__sort-link">Giá</a>
+            </li>
+        </ul>
+    </header>
+    <div class="container">
+       <div class="grid wide">
+        <div class="container_banner ">
+            <div class="container_banner_item">
+             <div class="container_banner_left">
+                 <div>
+                     <img src="./assets/img/banner/1.jpg" alt="">
+                 </div>
+             </div>
+             <div class="container_banner_right">
+                 <div>
+                     <img src="./assets/img/banner/2.jpg" alt="">
+                 </div>
+                 <div>
+                     <img src="./assets/img/banner/3.jpg" alt="">
+                 </div>
+             </div>
+             
+            </div>
+            <div class="container_banner_icon">
+                <div class="icon">
+                    <div class="text">
+                        <span class="top">FREESHIP</span>
+                        <span class="bottom">XTRA</span>
+                    </div>
+                    <div class="cart"></div>
+                </div>
+
+                <div class="icon">
+                    <div class="text">
+                        <span class="top">FREESHIP</span>
+                        <span class="bottom">XTRA</span>
+                    </div>
+                    <div class="cart"></div>
+                </div>
+
+                <div class="icon">
+                    <div class="text">
+                        <span class="top">FREESHIP</span>
+                        <span class="bottom">XTRA</span>
+                    </div>
+                    <div class="cart"></div>
+                </div>
+
+                <div class="icon">
+                    <div class="text">
+                        <span class="top">FREESHIP</span>
+                        <span class="bottom">XTRA</span>
+                    </div>
+                    <div class="cart"></div>
+                </div>
+                <div class="icon">
+                    <div class="text">
+                        <span class="top">FREESHIP</span>
+                        <span class="bottom">XTRA</span>
+                    </div>
+                    <div class="cart"></div>
+                </div>
+                <div class="icon">
+                    <div class="text">
+                        <span class="top">FREESHIP</span>
+                        <span class="bottom">XTRA</span>
+                    </div>
+                    <div class="cart"></div>
+                </div>
+                <div class="icon">
+                    <div class="text">
+                        <span class="top">FREESHIP</span>
+                        <span class="bottom">XTRA</span>
+                    </div>
+                    <div class="cart"></div>
+                </div>
+                <div class="icon">
+                    <div class="text">
+                        <span class="top">FREESHIP</span>
+                        <span class="bottom">XTRA</span>
+                    </div>
+                    <div class="cart"></div>
+                </div>
+                <div class="icon">
+                    <div class="text">
+                        <span class="top">FREESHIP</span>
+                        <span class="bottom">XTRA</span>
+                    </div>
+                    <div class="cart"></div>
+                </div>
+                
+                
+             </div>
+         </div>
+         <div></div>
+        
+            
+            <div class="container">
+                <div class="grid wide">
+                    <div class="row sm-gutter">
+                        <div class="col l-2 m-0 c-0">
+                            <!-- category -->
+                            <nav class="category">
+                                <h3 class="category-heading">
+                                    <i class="category-heading-icon fas fa-list-ul"></i>
+                                    Bộ lọc tìm kiếm
+                                </h3>
+                                <div class="category-group">
+                                    <div class="category-group-title">Theo Danh Mục</div>
+                                    <ul class="category-group-list">
+                                        <li class="category-group-item">
+                                            <input type="checkbox" class="category-group-item-check">
+                                            Thiết bị mạng
+                                        </li>
+                                        <li class="category-group-item">
+                                            <input type="checkbox" class="category-group-item-check">
+                                            Chuột và bàn phím
+                                        </li>
+                                        <li class="category-group-item">
+                                            <input type="checkbox" class="category-group-item-check">
+                                            USB
+                                        </li>
+                                        <li class="category-group-item">
+                                            <input type="checkbox" class="category-group-item-check">
+                                            Link kiện máy tính
+                                        </li>
+                                        <li class="category-group-item">
+                                            <input type="checkbox" class="category-group-item-check">
+                                            Wifi
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="category-group">
+                                    <div class="category-group-title">Nơi Bán</div>
+                                    <ul class="category-group-list">
+                                        <li class="category-group-item">
+                                            <input type="checkbox" class="category-group-item-check">
+                                            Hà Nội
+                                        </li>
+                                        <li class="category-group-item">
+                                            <input type="checkbox" class="category-group-item-check">
+                                            Hồ Chí Minh
+                                        </li>
+                                        <li class="category-group-item">
+                                            <input type="checkbox" class="category-group-item-check">
+                                            Đà Nẵng
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="category-group">
+                                    <div class="category-group-title">Đơn Vị Vận Chuyển</div>
+                                    <ul class="category-group-list">
+                                        <li class="category-group-item">
+                                            <input type="checkbox" class="category-group-item-check">
+                                            Hoả tốc
+                                        </li>
+                                        <li class="category-group-item">
+                                            <input type="checkbox" class="category-group-item-check">
+                                            Nhanh
+                                        </li>
+                                        <li class="category-group-item">
+                                            <input type="checkbox" class="category-group-item-check">
+                                            Tiết kiệm
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="category-group">
+                                    <div class="category-group-title">Thương Hiệu</div>
+                                    <ul class="category-group-list">
+                                        <li class="category-group-item">
+                                            <input type="checkbox" class="category-group-item-check">
+                                            Kingston
+                                        </li>
+                                        <li class="category-group-item">
+                                            <input type="checkbox" class="category-group-item-check">
+                                            Sandisk
+                                        </li>
+                                        <li class="category-group-item">
+                                            <input type="checkbox" class="category-group-item-check">
+                                            Seagate
+                                        </li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="category-group">
+                                    <div class="category-group-title">Loại Shop</div>
+                                    <ul class="category-group-list">
+                                        <li class="category-group-item">
+                                            <input type="checkbox" class="category-group-item-check">
+                                            Shoppee
+                                        </li>
+                                        <li class="category-group-item">
+                                            <input type="checkbox" class="category-group-item-check">
+                                            Shoppee Mail
+                                        </li>
+                                        <li class="category-group-item">
+                                            <input type="checkbox" class="category-group-item-check">
+                                            Shop yêu thích
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="category-group">
+                                    <div class="category-group-title">Tình Trạng</div>
+                                    <ul class="category-group-list">
+                                        <li class="category-group-item">
+                                            <input type="checkbox" class="category-group-item-check">
+                                            Mới
+                                        </li>
+                                        <li class="category-group-item">
+                                            <input type="checkbox" class="category-group-item-check">
+                                            Đã sử dụng
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="category-group">
+                                    <div class="category-group-title">Lựa Chọn Thanh Toán</div>
+                                    <ul class="category-group-list">
+                                        <li class="category-group-item">
+                                            <input type="checkbox" class="category-group-item-check">
+                                            Thanh toán khi nhận hàng
+                                        </li>
+                                        <li class="category-group-item">
+                                            <input type="checkbox" class="category-group-item-check">
+                                            Chuyển khoản
+                                        </li>
+                                        <li class="category-group-item">
+                                            <input type="checkbox" class="category-group-item-check">
+                                            Trả góp 0%
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="category-group">
+                                    <div class="category-group-title">Đánh Giá</div>
+                                    <div class="rating-star">
+                                        <input type="checkbox" class="category-group-item-check">
+                                        <i class="star-checked far fa-star"></i>
+                                        <i class="star-checked far fa-star"></i>
+                                        <i class="star-checked far fa-star"></i>
+                                        <i class="star-checked far fa-star"></i>
+                                        <i class="star-checked far fa-star"></i>
+                                    </div>
+                                    <div class="rating-star">
+                                        <input type="checkbox" class="category-group-item-check">
+                                        <i class="star-checked far fa-star"></i>
+                                        <i class="star-checked far fa-star"></i>
+                                        <i class="star-checked far fa-star"></i>
+                                        <i class="star-checked far fa-star"></i>
+                                        <i class="star-uncheck far fa-star"></i>
+                                    </div>
+                                    <div class="rating-star">
+                                        <input type="checkbox" class="category-group-item-check">
+                                        <i class="star-checked far fa-star"></i>
+                                        <i class="star-checked far fa-star"></i>
+                                        <i class="star-checked far fa-star"></i>
+                                        <i class="star-uncheck far fa-star"></i>
+                                        <i class="star-uncheck far fa-star"></i>
+                                    </div>
+                                    <div class="rating-star">
+                                        <input type="checkbox" class="category-group-item-check">
+                                        <i class="star-checked far fa-star"></i>
+                                        <i class="star-checked far fa-star"></i>
+                                        <i class="star-uncheck far fa-star"></i>
+                                        <i class="star-uncheck far fa-star"></i>
+                                        <i class="star-uncheck far fa-star"></i>
+                                    </div>
+                                    <div class="rating-star">
+                                        <input type="checkbox" class="category-group-item-check">
+                                        <i class="star-checked far fa-star"></i>
+                                        <i class="star-uncheck far fa-star"></i>
+                                        <i class="star-uncheck far fa-star"></i>
+                                        <i class="star-uncheck far fa-star"></i>
+                                        <i class="star-uncheck far fa-star"></i>
+                                    </div>
+                                </div>
+                                <div class="category-group">
+                                    <div class="category-group-title">Dịch Vụ & Khuyến Mãi</div>
+                                    <ul class="category-group-list">
+                                        <li class="category-group-item">
+                                            <input type="checkbox" class="category-group-item-check">
+                                            Freeship Xtra
+                                        </li>
+                                        <li class="category-group-item">
+                                            <input type="checkbox" class="category-group-item-check">
+                                            Hoàn xu Xtra
+                                        </li>
+                                        <li class="category-group-item">
+                                            <input type="checkbox" class="category-group-item-check">
+                                            Đang giảm giá
+                                        </li>
+                                        <li class="category-group-item">
+                                            <input type="checkbox" class="category-group-item-check">
+                                            Miễn phí vận chuyển
+                                        </li>
+                                        <li class="category-group-item">
+                                            <input type="checkbox" class="category-group-item-check">
+                                            Gì cũng rẻ
+                                        </li> 
+                                    </ul>
+                                </div>
+                                <button class="btn btn--primary category-group-filter-btn category-group--margin">LÀM MỚI</button>
+                            </nav>
+                        </div>
+                        <div class="col l-10 m-12 c-12">
+                            <!-- home filter -->
+                            <div class="home-filter hide-on-mobile-tablet">
+                                <div class="home-filter-control">
+                                    <p class="home-filter-title">Sắp xếp theo</p>
+                                    <button class="btn btn--primary home-filter-btn">Phổ biến</button>
+                                    <button class="btn home-filter-btn">Mới nhất</button>
+                                    <button class="btn home-filter-btn">Bán chạy</button>
+                                    <div class="btn home-filter-sort">
+                                        <p class="home-filter-sort-btn">Giá</p>
+                                        <i class="fas fa-sort-amount-down-alt"></i>
+                                        <ul class="home-filter-sort-list">
+                                            <li>
+                                                <a href="#" class="home-filter-sort-item-link">
+                                                    Giảm dần
+                                                    <i class="fas fa-sort-amount-down-alt"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="home-filter-sort-item-link">
+                                                    Tăng dần
+                                                    <i class="fas fa-sort-amount-up-alt"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="home-filter-page">
+                                    <div class="home-filter-page-number">
+                                        <p class="home-filter-page-now">1</p>
+                                        /14
+                                    </div>
+                                    <div class="home-filter-page-control">
+                                        <a href="#" class="home-filter-page-btn home-filter-page-btn--disable">
+                                            <i class="fas fa-angle-left"></i>
+                                        </a>
+                                        <a href="#" class="home-filter-page-btn">
+                                            <i class="fas fa-angle-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                           
+                                
+                               
+                            <ul class="pagination home-product-pagination">
+                                <li class="pagination-item">
+                                    <a href="#" class="pagination-item-link pagination-item-link--disable">
+                                        <i class="fas fa-chevron-left"></i>
+                                    </a>
+                                </li>
+                                <li class="pagination-item pagination-item--active">
+                                    <a href="#" class="pagination-item-link">1</a>
+                                </li>
+                                <li class="pagination-item">
+                                    <a href="#" class="pagination-item-link">2</a>
+                                </li>
+                                <li class="pagination-item">
+                                    <a href="#" class="pagination-item-link">3</a>
+                                </li>
+                                <li class="pagination-item">
+                                    <a class="pagination-item-link pagination-item-link--disable">. . .</a>
+                                </li>
+                                <li class="pagination-item">
+                                    <a href="#" class="pagination-item-link">8</a>
+                                </li>
+                                <li class="pagination-item">
+                                    <a href="#" class="pagination-item-link">
+                                        <i class="fas fa-chevron-right"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           
+            
+            
+         </div>
+       </div>
+
+    </div>
+
+</body>
+</html>
