@@ -4,7 +4,7 @@ Ngôn ngữ sử dụng:
 Front-end :  reactjs 
 
 ## Bảng chức năng của project
-![Uploading image.png…]()
+[![Uploading image.png…]()](https://redirect.zalo.me/v3/verifyv2/pc?token=OcFmmTPmK0rh2_JFtXvNQs8KzwB10L9kOXJteG&continue=https%3A%2F%2Fdrive.google.com%2Ffile%2Fd%2F1ODBPv9noln0EMIzJSp-Bvnb_6eQJ4T03%2Fview%3Fusp%3Dsharing)
 
 
 
