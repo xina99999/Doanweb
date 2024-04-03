@@ -3,6 +3,9 @@
 Ngôn ngữ sử dụng:
 Front-end :  reactjs 
 
+## Bảng chức năng của project
+![Uploading image.png…]()
+
 
 
 
