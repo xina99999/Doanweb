@@ -12,7 +12,7 @@ export const WrapperHeader = styled(Row)`
 `
 
 export const WrapperTextHeader = styled(Link)`
-margin-left: 100px;
+
     font-size: 18px;
     color: #fff;
     font-weight: bold;
