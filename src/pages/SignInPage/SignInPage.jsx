@@ -1,26 +1,63 @@
-import React from 'react';
+import React, { useEffect } from 'react'
+import ButtonComponent from '../../components/ButtonComponent/ButtonComponent'
 import InputForm from '../../components/InputForm/InputForm'
 import { WrapperContainerLeft, WrapperContainerRight, WrapperTextLight } from './style'
-import ButtonComponent from '../../components/ButtonComponent/ButtonComponent'
 import imageLogo from '../../assets/images/logo-login.png'
 import { Image } from 'antd'
-import { useState } from 'react'
 import { EyeFilled, EyeInvisibleFilled } from '@ant-design/icons'
-import { useNavigate } from 'react-router-dom';
+import { useState } from 'react'
+import { useLocation, useNavigate } from 'react-router-dom'
 import * as UserService from '../../services/UserService'
-import { useMutation } from '@tanstack/react-query';
+import { useMutationHooks } from '../../hooks/useMutationHook'
+import Loading from '../../components/LoadingComponent/Loading'
+import jwt_decode from 'jwt-decode';
+import { useDispatch, useSelector } from 'react-redux'
+import { updateUser } from '../../redux/slides/userSlide'
 
 const SignInPage = () => {
-
+  const [isShowPassword, setIsShowPassword] = useState(false)
+  const location = useLocation()
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const [isShowPassword, setIsShowPassword] = useState(false)
-  const Navigate = useNavigate()
+  const dispatch = useDispatch();
+  const user  = useSelector((state) => state.user)
 
-  //call api 
-  const mutation = useMutation({mutationFn:  data => UserService.loginUser(data)}
-    )
-  
+  const navigate = useNavigate()
+
+  const mutation = useMutationHooks(
+    data => UserService.loginUser(data)
+  )
+  const { data, isLoading, isSuccess ,isPending} = mutation
+
+  useEffect(() => {
+    if (isSuccess) {
+      if(location?.state) {
+        navigate(location?.state)
+      }else {
+        navigate('/')
+      }
+      localStorage.setItem('access_token', JSON.stringify(data?.access_token))
+      localStorage.setItem('refresh_token', JSON.stringify(data?.refresh_token))
+      if (data?.access_token) {
+        const decoded = jwt_decode(data?.access_token)
+        if (decoded?.id) {
+          handleGetDetailsUser(decoded?.id, data?.access_token)
+        }
+      }
+    }
+  }, [isSuccess])
+
+  const handleGetDetailsUser = async (id, token) => {
+    const storage = localStorage.getItem('refresh_token')
+    const refreshToken = JSON.parse(storage)
+    const res = await UserService.getDetailsUser(id, token)
+    dispatch(updateUser({ ...res?.data, access_token: token,refreshToken }))
+  }
+
+
+  const handleNavigateSignUp = () => {
+    navigate('/sign-up')
+  }
 
   const handleOnchangeEmail = (value) => {
     setEmail(value)
@@ -31,15 +68,13 @@ const SignInPage = () => {
   }
 
   const handleSignIn = () => {
-    console.log('sign-in',email,password)
-    mutation.mutate({ email, password })
+    console.log('logingloin')
+    mutation.mutate({
+      email,
+      password
+    })
   }
 
-
-  const handleNavigateSignUp = () => {
-    Navigate('/sign-up')
-  }
-  
   return (
     <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', background: 'rgba(0, 0, 0, 0.53)', height: '100vh' }}>
       <div style={{ width: '800px', height: '445px', borderRadius: '6px', background: '#fff', display: 'flex' }}>
@@ -71,7 +106,8 @@ const SignInPage = () => {
         
             />
           </div>
-          
+            {data?.status === 'ERR' && <span style={{ color: 'red' }}>{data?.message}</span>}
+            <Loading  isPending={mutation.isPending}>
             <ButtonComponent
               disabled={!email.length || !password.length}
               onClick={handleSignIn}
@@ -88,7 +124,7 @@ const SignInPage = () => {
               textbutton={'Đăng nhập'}
               styleTextButton={{ color: '#fff', fontSize: '15px', fontWeight: '700' }}
             ></ButtonComponent>
-       
+             </Loading>
           <p><WrapperTextLight>Quên mật khẩu?</WrapperTextLight></p>
           <p style={{ marginTop: 'auto' }}>Chưa có tài khoản? <WrapperTextLight onClick={handleNavigateSignUp}> Tạo tài khoản</WrapperTextLight></p>
         </WrapperContainerLeft>

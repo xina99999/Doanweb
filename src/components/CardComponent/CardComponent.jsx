@@ -1,46 +1,51 @@
-import { Card } from 'antd'
-import { StyleNameProduct, WrapperDiscountText, WrapperCardStyle, wrapperDiscountText, WrapperPriceText, WrapperReportText } from './style'
-import { StarFilled } from '@ant-design/icons'
-import Meta from 'antd/es/card/Meta'
-import logo from '../../assets/images/logo.png'
 import React from 'react'
+import { StyleNameProduct, WrapperCardStyle, WrapperDiscountText, WrapperPriceText, WrapperReportText, WrapperStyleTextSell } from './style'
+import { StarFilled } from '@ant-design/icons'
+import logo from '../../assets/images/logo.png'
+import { useNavigate } from 'react-router-dom'
+import { convertPrice } from '../../utils'
 
-
-const CardComponent = () => {
-return (
+const CardComponent = (props) => {
+    const { countInStock, description, image, name, price, rating, type, discount, selled, id } = props
+    const navigate = useNavigate()
+    const handleDetailsProduct = (id) => {
+        navigate(`/product-details/${id}`)
+    }
+    return (
         <WrapperCardStyle
-        hoverable
-        headStyle={{ width: '200px', height: '200px' }}
-        style={{ width: 200 }}
-        bodyStyle={{ padding: '10px' }}
-        cover={<img alt="example" src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png" />} >
-           <img
+            hoverable
+            headStyle={{ width: '200px', height: '200px' }}
+            style={{ width: 200 }}
+            bodyStyle={{ padding: '10px' }}
+            cover={<img alt="example" src={image} />}
+            onClick={() =>  handleDetailsProduct(id)}
+        >
+            <img
                 src={logo}
                 style={{
                     width: '68px',
                     height: '14px',
                     position: 'absolute',
-                    top: 0,
-                    left: 0,
+                    top: -1,
+                    left: -1,
                     borderTopLeftRadius: '3px'
                 }}
             />
-
-        <StyleNameProduct>Tphone</StyleNameProduct>
-         <WrapperReportText>
+            <StyleNameProduct>{name}</StyleNameProduct>
+            <WrapperReportText>
                 <span style={{ marginRight: '4px' }}>
-                    <span>4.96 </span> <StarFilled style={{ fontSize: '12px', color: 'yellow' }} />
+                    <span>{rating} </span> <StarFilled style={{ fontSize: '12px', color: 'rgb(253, 216, 54)' }} />
                 </span>
-                <span> | Da ban  1000+</span>
+                <WrapperStyleTextSell> | Da ban {selled || 1000}+</WrapperStyleTextSell>
             </WrapperReportText>
             <WrapperPriceText>
-               1.000.000d
+                <span style={{ marginRight: '8px' }}>{convertPrice(price)}</span>
                 <WrapperDiscountText>
-                    - 5%
+                    - {discount || 5} %
                 </WrapperDiscountText>
             </WrapperPriceText>
         </WrapperCardStyle>
-)
+    )
 }
 
-export default CardComponent;
+export default CardComponent

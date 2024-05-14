@@ -12,7 +12,6 @@ export const WrapperHeader = styled(Row)`
 `
 
 export const WrapperTextHeader = styled(Link)`
-
     font-size: 18px;
     color: #fff;
     font-weight: bold;
@@ -23,10 +22,8 @@ export const WrapperTextHeader = styled(Link)`
     }
 `
 
-export const WrapperHeaderAccount = styled.div`
+export const WrapperHeaderAccout = styled.div`
     display: flex;
-    
-
     align-items: center;
     color: #fff;
     gap: 10px;
