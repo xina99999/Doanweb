@@ -306,7 +306,7 @@ const OrderPage = () => {
         </div>
       </div>
       <ModalComponent title="Cập nhật thông tin giao hàng" open={isOpenModalUpdateInfo} onCancel={handleCancleUpdate} onOk={handleUpdateInforUser}>
-        <Loading isPending={isLoading}>
+        <Loading isLoading={isLoading}>
         <Form
             name="basic"
             labelCol={{ span: 4 }}

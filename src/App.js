@@ -68,6 +68,7 @@ function App() {
             {routes.map((route) => {
               const Page = route.page
               const Layout = route.isShowHeader ? DefaultComponent : Fragment
+              console.log("isPending",isLoading)
               return (
                 <Route key={route.path} path={route.path} element={
                   <Layout>

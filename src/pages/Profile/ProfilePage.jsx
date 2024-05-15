@@ -29,7 +29,7 @@ const ProfilePage = () => {
     )
 
     const dispatch = useDispatch()
-    const { data, isPending, isSuccess, isError } = mutation
+    const { data, isLoading, isSuccess, isError } = mutation
 
     useEffect(() => {
         setEmail(user?.email)
@@ -78,10 +78,11 @@ const ProfilePage = () => {
         mutation.mutate({ id: user?.id, email, name, phone, address, avatar, access_token: user?.access_token })
 
     }
+    console.log('isPending',mutation.isLoading)
     return (
         <div style={{ width: '1270px', margin: '0 auto', height: '500px' }}>
             <WrapperHeader>Thông tin người dùng</WrapperHeader>
-            <Loading isPending={isPending}>
+            <Loading isPending={isLoading}>
                 <WrapperContentProfile>
                     <WrapperInput>
                         <WrapperLabel htmlFor="name">Name</WrapperLabel>

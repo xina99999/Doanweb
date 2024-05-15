@@ -30,7 +30,7 @@ const SignUpPage = () => {
     data => UserService.signupUser(data)
   )
 
-  const { data, isPending, isSuccess, isError } = mutation
+  const { data, isLoading, isSuccess, isError } = mutation
 
   useEffect(() => {
     if (isSuccess) {
@@ -106,7 +106,7 @@ const SignUpPage = () => {
             />
           </div>
           {data?.status === 'ERR' && <span style={{ color: 'red' }}>{data?.message}</span>}
-          <Loading isPending={isPending}>
+          <Loading isPending={isLoading}>
             <ButtonComponent
               disabled={!email.length || !password.length || !confirmPassword.length}
               onClick={handleSignUp}

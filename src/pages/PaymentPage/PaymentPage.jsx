@@ -137,7 +137,7 @@ const PaymentPage = () => {
     },
   )
 
-  const {isLoading, data} = mutationUpdate
+  const {isLoading:isPendingUpdate , data} = mutationUpdate
   const {data: dataAdd,isLoading:isLoadingAddOrder, isSuccess, isError} = mutationAddOrder
 
   useEffect(() => {
@@ -226,6 +226,7 @@ const PaymentPage = () => {
     script.type = 'text/javascript'
     script.src = `https://www.paypal.com/sdk/js?client-id=${data}`
     script.async = true;
+    console.log("data_payment",data)
     script.onload = () => {
       setSdkReady(true)
     }
@@ -327,7 +328,7 @@ const PaymentPage = () => {
           </div>
         </div>
         <ModalComponent title="Cập nhật thông tin giao hàng" open={isOpenModalUpdateInfo} onCancel={handleCancleUpdate} onOk={handleUpdateInforUser}>
-          <Loading isPending={isLoading}>
+          <Loading isPending={isPendingUpdate}>
           <Form
               name="basic"
               labelCol={{ span: 4 }}

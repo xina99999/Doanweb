@@ -61,6 +61,7 @@ const MyOrderPage = () => {
   }, [isErrorCancle, isSuccessCancel])
 
   const renderProduct = (data) => {
+    console.log('data',data)
     return data?.map((order) => {
       return <WrapperHeaderItem key={order?._id}> 
               <img src={order?.image} 
