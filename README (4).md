@@ -1,11 +1,11 @@
-# Tên đề tài: Website thương mại điện tử 
+# Tên đề tài: Website Thương mại Điện tử 
 # Giới thiệu
 ## Mục tiêu của project
-Đây là project của môn học Phát triển ứng dụng Web - UIT. Nội dung là tạo một trang web cho phép người dùng mua hàng thông qua nên tản mua sắm online, thông minh tiện lợilợi
+Đây là project của môn học Phát triển ứng dụng Web - UIT. Nội dung là tạo một trang web cho phép người dùng mua hàng thông qua nên tản mua sắm online, thông minh tiện lợi
 
 Trang web phải đảm bảo được các mục tiêu:
-- Giúp người dùng có thể thanh toán nhanh chóng với nhiều giải pháp : thanh toán khi nhận hàng, thanh toán qua nền tảng paypalpaypal.
-- Tiện lợi cho người admin quản lý và thống kê thông tin ủa nền tảng.
+- Giúp người dùng có thể thanh toán nhanh chóng với nhiều giải pháp : thanh toán khi nhận hàng, thanh toán qua nền tảng PayPal.
+- Tiện lợi cho người admin quản lý và thống kê thông tin của nền tảng.
 - Giao diện hiện đại, thu hút, load nhanh.
 ## Các thành viên tham gia project
 
@@ -43,13 +43,12 @@ Trang web phải đảm bảo được các mục tiêu:
 ![adminpage_3](https://github.com/PNCTriet/UIT_G6_WebProject/blob/main/UIT_G6_WEBPROJECT_ORIGINAL/demo/adminpage_3.png)
 
 # Về Backen hệ thống 
-Các bạn truy cập link này để cài đặt backen  cho hệ thốngthống
-
+Các bạn truy cập link này để cài đặt Backend cho hệ thống
 https://github.com/DavidChelsea1806/Doanweb-Backend 
 # Các công nghệ sử dụng trong project
-- Front-end: reactjs
-- Back-end: nodejs
-- Database : Monngodb 
+- Front-end: Reactjs
+- Back-end: Nodejs
+- Database : MongoDB 
 # Các modules
 
 # Yêu cầu hệ thống
