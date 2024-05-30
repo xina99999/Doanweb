@@ -19,8 +19,8 @@ Trang web phải đảm bảo được các mục tiêu:
 
 
 
-# Demo front-end
-1. Giao diện đăng 
+# Demo Front-end
+1. Giao diện đăng nhập
 ![signinpage](https://github.com/xina99999/Doanweb/blob/master/giaodiendangnhap.png)
 
 2. Giao diện chính
