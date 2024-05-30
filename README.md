@@ -31,7 +31,7 @@ Trang web phải đảm bảo được các mục tiêu:
 ![signinpage](https://github.com/PNCTriet/UIT_G6_WebProject/blob/main/UIT_G6_WEBPROJECT_ORIGINAL/demo/signinpage.png)
 ![signuppage](https://github.com/PNCTriet/UIT_G6_WebProject/blob/main/UIT_G6_WEBPROJECT_ORIGINAL/demo/signuppage.png)
 3. admin page
-![adminpage_1]([https://github.com/](https://github.com/xina99999/Doanweb/blob/master/giaodienchinh.png))
+![adminpage_1](https://github.com/xina99999/Doanweb/blob/master/giaodienchinh.png)
 
 
 # Về Backen hệ thống 
