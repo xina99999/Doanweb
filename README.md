@@ -17,14 +17,7 @@ Trang web phải đảm bảo được các mục tiêu:
 | 4  | Trương Nguyên Phương    | 20521780@gm.uit.edu.vn |
 | 5  | Nguyễn Trọng Nhân         | 19520801@gm.uit.edu.vn |
 
-# Mô hình usecase   
-![admin_usecase](https://github.com/PNCTriet/UIT_G6_WebProject/blob/main/UIT_G6_WEBPROJECT_ORIGINAL/datasources/photodata_readme/admin_usecase.jpg)
-![admin_usecasedetails](https://github.com/PNCTriet/UIT_G6_WebProject/blob/main/UIT_G6_WEBPROJECT_ORIGINAL/datasources/photodata_readme/admin_usecasedetails.jpg)
-![user_usecase](https://github.com/PNCTriet/UIT_G6_WebProject/blob/main/UIT_G6_WEBPROJECT_ORIGINAL/datasources/photodata_readme/user_usecase.jpg)
-![user_usecasedetails](https://github.com/PNCTriet/UIT_G6_WebProject/blob/main/UIT_G6_WEBPROJECT_ORIGINAL/datasources/photodata_readme/user_usecasedetails.jpg)
 
-# Mô hình ERD
-![ERD_demo1](https://github.com/PNCTriet/UIT_G6_WebProject/blob/main/UIT_G6_WEBPROJECT_ORIGINAL/datasources/sqldatabase/ERD_demo1.png)
 
 # Demo front-end
 1. user page
