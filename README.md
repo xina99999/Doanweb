@@ -43,12 +43,13 @@ Trang web phải đảm bảo được các mục tiêu:
 ![adminpage_3](https://github.com/PNCTriet/UIT_G6_WebProject/blob/main/UIT_G6_WEBPROJECT_ORIGINAL/demo/adminpage_3.png)
 
 # Về Backen hệ thống 
-Các bạn truy cập link này để cài đặt backend cho hệ thống
+Các bạn truy cập link này để cài đặt Backend cho hệ thống
+
 https://github.com/DavidChelsea1806/Doanweb-Backend 
 # Các công nghệ sử dụng trong project
 - Front-end: Reactjs
 - Back-end: Nodejs
-- Database : MongoDB 
+- Database: MongoDB 
 # Các modules
 
 # Yêu cầu hệ thống
