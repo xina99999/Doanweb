@@ -31,9 +31,8 @@ Trang web phải đảm bảo được các mục tiêu:
 ![signinpage](https://github.com/PNCTriet/UIT_G6_WebProject/blob/main/UIT_G6_WEBPROJECT_ORIGINAL/demo/signinpage.png)
 ![signuppage](https://github.com/PNCTriet/UIT_G6_WebProject/blob/main/UIT_G6_WEBPROJECT_ORIGINAL/demo/signuppage.png)
 3. admin page
-![adminpage_1](https://github.com/PNCTriet/UIT_G6_WebProject/blob/main/UIT_G6_WEBPROJECT_ORIGINAL/demo/adminpage_1.png)
-![adminpage_2](https://github.com/PNCTriet/UIT_G6_WebProject/blob/main/UIT_G6_WEBPROJECT_ORIGINAL/demo/adminpage_2.png)
-![adminpage_3](https://github.com/PNCTriet/UIT_G6_WebProject/blob/main/UIT_G6_WEBPROJECT_ORIGINAL/demo/adminpage_3.png)
+![adminpage_1]([https://github.com/](https://github.com/xina99999/Doanweb/blob/master/giaodienchinh.png))
+
 
 # Về Backen hệ thống 
 Các bạn truy cập link này để cài đặt backen  cho hệ thốngthống
