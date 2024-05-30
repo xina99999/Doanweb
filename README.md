@@ -1,70 +1,59 @@
-# Getting Started with Create React App
+# Tên đề tài: Website thương mại điện tử 
+# Giới thiệu
+## Mục tiêu của project
+Đây là project của môn học Phát triển ứng dụng Web - UIT. Nội dung là tạo một trang web cho phép người dùng mua hàng thông qua nên tản mua sắm online, thông minh tiện lợilợi
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Trang web phải đảm bảo được các mục tiêu:
+- Giúp người dùng có thể thanh toán nhanh chóng với nhiều giải pháp : thanh toán khi nhận hàng, thanh toán qua nền tảng paypalpaypal.
+- Tiện lợi cho người admin quản lý và thống kê thông tin ủa nền tảng.
+- Giao diện hiện đại, thu hút, load nhanh.
+## Các thành viên tham gia project
 
-## Available Scripts
+| STT| Họ tên                   | Email                  |
+|:--:|--------------------------|------------------------|
+| 1  | Nguyễn Duy Trọng Nhân    | 20520669@gm.uit.edu.vn |
+| 2  | Nguyễn Quang Dũng            | 22520287@gm.uit.edu.vn |
+| 3  | Phạm Huy Hoàng             | 21522098@gm.uit.edu.vn |
+| 4  | Trương Nguyên Phương    | 20521780@gm.uit.edu.vn |
+| 5  | Nguyễn Trọng Nhân         | 19520801@gm.uit.edu.vn |
 
-In the project directory, you can run:
+# Mô hình usecase   
+![admin_usecase](https://github.com/PNCTriet/UIT_G6_WebProject/blob/main/UIT_G6_WEBPROJECT_ORIGINAL/datasources/photodata_readme/admin_usecase.jpg)
+![admin_usecasedetails](https://github.com/PNCTriet/UIT_G6_WebProject/blob/main/UIT_G6_WEBPROJECT_ORIGINAL/datasources/photodata_readme/admin_usecasedetails.jpg)
+![user_usecase](https://github.com/PNCTriet/UIT_G6_WebProject/blob/main/UIT_G6_WEBPROJECT_ORIGINAL/datasources/photodata_readme/user_usecase.jpg)
+![user_usecasedetails](https://github.com/PNCTriet/UIT_G6_WebProject/blob/main/UIT_G6_WEBPROJECT_ORIGINAL/datasources/photodata_readme/user_usecasedetails.jpg)
 
-### `npm start`
+# Mô hình ERD
+![ERD_demo1](https://github.com/PNCTriet/UIT_G6_WebProject/blob/main/UIT_G6_WEBPROJECT_ORIGINAL/datasources/sqldatabase/ERD_demo1.png)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+# Demo front-end
+1. user page
+![mainpage_1](https://github.com/PNCTriet/UIT_G6_WebProject/blob/main/UIT_G6_WEBPROJECT_ORIGINAL/demo/mainpage_1.png)
+![mainpage_2](https://github.com/PNCTriet/UIT_G6_WebProject/blob/main/UIT_G6_WEBPROJECT_ORIGINAL/demo/mainpage_2.png)
+![mainpage_3](https://github.com/PNCTriet/UIT_G6_WebProject/blob/main/UIT_G6_WEBPROJECT_ORIGINAL/demo/mainpage_3.png)
+![profilepage](https://github.com/PNCTriet/UIT_G6_WebProject/blob/main/UIT_G6_WEBPROJECT_ORIGINAL/demo/profilepage.png)
+![detailpage](https://github.com/PNCTriet/UIT_G6_WebProject/blob/main/UIT_G6_WEBPROJECT_ORIGINAL/demo/detailpage.png)
+![streamingpage](https://github.com/PNCTriet/UIT_G6_WebProject/blob/main/UIT_G6_WEBPROJECT_ORIGINAL/demo/streamingpage.png)
+2. authentication page
+![signinpage](https://github.com/PNCTriet/UIT_G6_WebProject/blob/main/UIT_G6_WEBPROJECT_ORIGINAL/demo/signinpage.png)
+![signuppage](https://github.com/PNCTriet/UIT_G6_WebProject/blob/main/UIT_G6_WEBPROJECT_ORIGINAL/demo/signuppage.png)
+3. admin page
+![adminpage_1](https://github.com/PNCTriet/UIT_G6_WebProject/blob/main/UIT_G6_WEBPROJECT_ORIGINAL/demo/adminpage_1.png)
+![adminpage_2](https://github.com/PNCTriet/UIT_G6_WebProject/blob/main/UIT_G6_WEBPROJECT_ORIGINAL/demo/adminpage_2.png)
+![adminpage_3](https://github.com/PNCTriet/UIT_G6_WebProject/blob/main/UIT_G6_WEBPROJECT_ORIGINAL/demo/adminpage_3.png)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+# Về Backen hệ thống 
+Các bạn truy cập link này để cài đặt backen  cho hệ thốngthống
 
-### `npm test`
+https://github.com/DavidChelsea1806/Doanweb-Backend 
+# Các công nghệ sử dụng trong project
+- Front-end: reactjs
+- Back-end: nodejs
+- Database : Monngodb 
+# Các modules
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# Yêu cầu hệ thống
 
-### `npm run build`
+# Cài đặt và sử dụng
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# Nguồn tham khảo
