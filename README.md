@@ -22,7 +22,7 @@ Trang web phải đảm bảo được các mục tiêu:
 # Demo front-end
 1. Giao diện đăng 
 ![signinpage](https://github.com/xina99999/Doanweb/blob/master/giaodiendangnhap.png)
-![signuppage](https://github.com/PNCTriet/UIT_G6_WebProject/blob/main/UIT_G6_WEBPROJECT_ORIGINAL/demo/signuppage.png)
+
 2. Giao diện chính
 ![mainpage_1](https://github.com/xina99999/Doanweb/blob/master/giaodienchinh.png)
 
