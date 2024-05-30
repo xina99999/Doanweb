@@ -20,18 +20,11 @@ Trang web phải đảm bảo được các mục tiêu:
 
 
 # Demo front-end
-1. user page
-![mainpage_1](https://github.com/PNCTriet/UIT_G6_WebProject/blob/main/UIT_G6_WEBPROJECT_ORIGINAL/demo/mainpage_1.png)
-![mainpage_2](https://github.com/PNCTriet/UIT_G6_WebProject/blob/main/UIT_G6_WEBPROJECT_ORIGINAL/demo/mainpage_2.png)
-![mainpage_3](https://github.com/PNCTriet/UIT_G6_WebProject/blob/main/UIT_G6_WEBPROJECT_ORIGINAL/demo/mainpage_3.png)
-![profilepage](https://github.com/PNCTriet/UIT_G6_WebProject/blob/main/UIT_G6_WEBPROJECT_ORIGINAL/demo/profilepage.png)
-![detailpage](https://github.com/PNCTriet/UIT_G6_WebProject/blob/main/UIT_G6_WEBPROJECT_ORIGINAL/demo/detailpage.png)
-![streamingpage](https://github.com/PNCTriet/UIT_G6_WebProject/blob/main/UIT_G6_WEBPROJECT_ORIGINAL/demo/streamingpage.png)
-2. authentication page
-![signinpage](https://github.com/PNCTriet/UIT_G6_WebProject/blob/main/UIT_G6_WEBPROJECT_ORIGINAL/demo/signinpage.png)
+1. Giao diện đăng 
+![signinpage](https://github.com/xina99999/Doanweb/blob/master/giaodiendangnhap.png)
 ![signuppage](https://github.com/PNCTriet/UIT_G6_WebProject/blob/main/UIT_G6_WEBPROJECT_ORIGINAL/demo/signuppage.png)
-3. admin page
-![adminpage_1](https://github.com/xina99999/Doanweb/blob/master/giaodienchinh.png)
+2. Giao diện chính
+![mainpage_1](https://github.com/xina99999/Doanweb/blob/master/giaodienchinh.png)
 
 
 # Về Backen hệ thống 
