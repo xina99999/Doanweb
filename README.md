@@ -4,7 +4,7 @@
 Đây là project của môn học Lập trình ứng dụng Web - UIT. Nội dung là tạo một trang web cho phép người dùng mua hàng thông qua nền tảng mua sắm online, thông minh tiện lợi
 
 Trang web phải đảm bảo được các mục tiêu:
-- Giúp người dùng có thể thanh toán nhanh chóng với nhiều giải pháp : thanh toán khi nhận hàng, thanh toán qua nền tảng Paypal
+- Giúp người dùng có thể thanh toán nhanh chóng với nhiều giải pháp : thanh toán khi nhận hàng, thanh toán qua nền tảng PayPal
 - Tiện lợi cho người admin quản lý và thống kê thông tin của nền tảng.
 - Giao diện hiện đại, thu hút, load nhanh.
 ## Các thành viên tham gia project
