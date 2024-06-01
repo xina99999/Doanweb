@@ -54,5 +54,5 @@ Cài đặt Reactjs
     ```
     npm start
     ```
- - Bằng cách này bạn vào địa chỉ http://localhost:3000/ để xem giao diện trang Web
+ - Bằng cách này bạn vào địa chỉ http://www.14kshop.live để xem giao diện trang Web
 # Nguồn tham khảo
