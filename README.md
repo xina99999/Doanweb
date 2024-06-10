@@ -55,7 +55,7 @@ Cài đặt Reactjs
     npm start
     ```
  - Bằng cách này bạn vào địa chỉ http://www.14kshop.live để xem giao diện trang Web
-# Trả lời các câu hỏi liên quan
+# Trả lời các câu hỏi liên quan đến Spring Boot
 **Câu 1: Spring Boot MVC hoạt động như thế nào?** 
 
 Spring MVC (Model-View-Controller) là một phần quan trọng của Spring Framework và là một trong những framework phát triển ứng dụng web phổ biến nhất. Nó giúp bạn tách biệt logic trong ứng dụng web thành các phần riêng biệt, giúp quản lý và phát triển dễ dàng hơn. Cách thức hoạt động của nó như sau:  
